@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Seldon</string>
+
+
+    <!--headings-->
+    <string name="the25thCompany_presents_heading">25th.co presents</string>
+
+    <string name="seldon_heading">Seldon</string>
+    <string name="seldon_heading_comma">Seldon,</string>
+
+
+    <!--intro fragment -->
+    <string name="fragment_intro_txt_body">
+        a time machine. \n\nSeldon records a single, one minute message to your partner, child or mortal enemy, and delivers it on the day of your choice, between one and twenty years later.
+    </string>
+    <string name="fragment_intro_btn_begin_title">Begin.</string>
+
+    <!--email entry fragment -->
+    <string name="fragment_email_txt_body">
+        who will send your message to the email address you enter here.\n\nAt present, email is the most ubiquitous form of digital communication.This has been the case since the start of the internet and we’re confident it’s not going to change any time soon.</string>
+
+
+    <!--date entry fragment -->
+    <string name="fragment_date_txt_body">
+        who will deliver your recording on the date you enter below.\n\nIt could be a birthday, anniversary, holiday, or just a random point in time.
+    </string>
+
+    <!--recording fragment -->
+    <string name="fragment_recording_txt_body_not_recording">
+        who is ready to record your message.\n\nPlease don’t put the phone right next to your face.\n\nSpeak into your device like you’re making a call on speakerphone.
+    </string>
+
+    <string name="fragment_recording_txt_body_is_recording">
+        is now recording your message.\n\nPlease don’t put the phone right next to your face.\n\nSpeak into your device like you’re making a call on speakerphone.
+    </string>
+
+    <!--preview fragment-->
+    <string name="fragment_preview_txt_body">
+        is pleased with this message.\n\nThank you for giving his existence meaning.\n\nCheck the details and then we’re good to go.
+    </string>
+
+    <!--success fragment-->
+    <string name="fragment_success_txt_body">
+        will guard your message with his life. You can count on him.\n\nPut %1$s in your diary. Your message will be delivered on this day.\n\nCheerio!
+    </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sending">SendingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

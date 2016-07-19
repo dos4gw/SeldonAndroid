@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:background="@color/seldonGreen"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/img_seldon_logo"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_company_logo"
+            android:scaleType="fitCenter"
+
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_25thCo_presents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:height="100dp"
+            android:text="@string/the25thCompany_presents_heading"
+            />
+
+        <TextView
+            android:id="@+id/txt_seldon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_25thCo_presents"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:text="@string/seldon_heading"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txtView_fragment_success_body"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_seldon"
+            android:layout_toRightOf="@+id/img_seldon_logo"
+            android:layout_toEndOf="@+id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:text="@string/fragment_success_txt_body"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:padding="0dp"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="Send another"
+        android:textSize="25sp"
+        android:alpha="1.0"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:onClick="startAgain"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:padding="0dp"
+        android:textAllCaps="false"
+        android:text="All done"
+        android:textSize="25sp"
+        android:alpha="1.0"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:onClick="closeSeldon"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        />
+
+
+
+</LinearLayout>

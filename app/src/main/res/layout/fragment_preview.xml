@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:background="@android:color/black"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/img_seldon_logo"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_company_logo"
+            android:scaleType="fitCenter"
+
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_25thCo_presents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:height="100dp"
+            android:text="@string/the25thCompany_presents_heading"
+            />
+
+        <TextView
+            android:id="@+id/txt_seldon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_25thCo_presents"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:text="@string/seldon_heading"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_seldon"
+            android:layout_toRightOf="@+id/img_seldon_logo"
+            android:layout_toEndOf="@+id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:text="@string/fragment_preview_txt_body"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="0dp"
+        android:padding="30dp"
+        >
+
+        <TextView
+            android:id="@+id/fragment_preview_txt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Send"
+            />
+
+        <EditText
+            android:id="@+id/fragment_preview_txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:focusable="false"
+            android:inputType="textEmailAddress"
+            android:text="30 second message"
+            android:layout_toRightOf="@id/fragment_preview_txt_send"
+            android:layout_toEndOf="@id/fragment_preview_txt_send"
+
+            />
+
+        <TextView
+            android:id="@+id/fragment_preview_txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="to"
+            android:layout_below="@id/fragment_preview_txt_send"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            />
+
+        <EditText
+            android:id="@+id/fragment_preview_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipient email here."
+            android:gravity="start"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@id/fragment_preview_txt_to"
+            android:layout_toEndOf="@id/fragment_preview_txt_to"
+            android:layout_below="@id/fragment_preview_txt_send"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_preview_txt_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="on"
+            android:layout_below="@id/fragment_preview_txt_to"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            />
+
+
+        <EditText
+            android:id="@+id/fragment_preview_txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:gravity="start"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:singleLine="true"
+            android:focusable="false"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@id/fragment_preview_txt_on"
+            android:layout_toEndOf="@id/fragment_preview_txt_on"
+            android:layout_below="@id/fragment_preview_txt_email"
+            />
+
+
+        <Button
+            android:id="@+id/fragment_preview_btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_preview_txt_on"
+            android:textAllCaps="false"
+
+
+            android:text="Send now!"
+            android:textSize="25sp"
+            android:alpha="1.0"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:paddingTop="50dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

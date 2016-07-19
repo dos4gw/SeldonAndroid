@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:background="@android:color/black"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/img_seldon_logo"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_company_logo"
+            android:scaleType="fitCenter"
+
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_25thCo_presents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:height="100dp"
+            android:text="@string/the25thCompany_presents_heading"
+            />
+
+        <TextView
+            android:id="@+id/txt_seldon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_25thCo_presents"
+            android:layout_toEndOf="@id/img_seldon_logo"
+            android:layout_toRightOf="@id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:text="@string/seldon_heading_comma"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_seldon"
+            android:layout_toRightOf="@+id/img_seldon_logo"
+            android:layout_toEndOf="@+id/img_seldon_logo"
+            android:textColor="@android:color/white"
+            android:text="@string/fragment_date_txt_body"
+
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:layout_height="0dp">
+
+
+        <EditText
+            android:id="@+id/fragment_date_txt_pickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select a date."
+            android:gravity="start"
+            android:paddingTop="50dp"
+            android:paddingBottom="17dp"
+            android:textSize="22sp"
+            android:focusable="false"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="40dp"
+
+            />
+
+        <Button
+            android:id="@+id/fragment_date_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_date_txt_pickDate"
+            android:textAllCaps="false"
+            android:text="Done."
+            android:textSize="25sp"
+            android:alpha="1.0"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:paddingTop="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="125dp"
+            android:paddingStart="125dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:visibility="gone"
+
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
